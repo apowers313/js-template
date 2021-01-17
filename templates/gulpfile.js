@@ -9,7 +9,7 @@ const nodemon = require("gulp-nodemon");
 let {spawn} = require("child_process");
 const browserSync = require("browser-sync").create();
 
-const sources = ["src/*.js", "lib/*.js", "index.js", "main.js"];
+const sources = ["src/*.js", "lib/*.js", "index.js"];
 const tests = ["test/*.js"];
 const support = ["gulpfile.js", "package.json", ".eslintrc.js", "docs.json"];
 const js = [... sources, ... tests];

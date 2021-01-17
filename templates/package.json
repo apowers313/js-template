@@ -19,10 +19,10 @@
     "coverage": "gulp coverage",
     "docs": "gulp docs"
   },
-  "author": "Adam Powers <apowers@ato.ms>",
+  "author": "{{author}} <{{email}}>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/apowers313/{{kebabCase name}}"
+    "url": "https://github.com/{{githubName}}/{{kebabCase name}}"
   },
   "license": "UNLICENSED",
   "devDependencies": {

@@ -6,8 +6,8 @@
         "plugins/markdown"
     ],
     "opts": {
-        "systemName": "NHAI",
-        "copyright": "Copyright 2020, Adam Powers",
+        "systemName": "{{titleCase name}}",
+        "copyright": "Copyright {{year}}, {{author}}",
         "template": "node_modules/tui-jsdoc-template",
         "readme": "README.md",
         "encoding": "utf8",
@@ -16,14 +16,14 @@
         "verbose": true
     },
     "templates": {
-        "name": "NHAI",
-        "footerText": "TEST FOOTER",
+        "name": "{{titleCase name}}",
+        "footerText": "{{titleCase name}}",
         "useCollapsibles": true,
         "logo": {
             "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/1x1.png",
             "width": "1px",
             "height": "1px",
-            "link": "https://apowers313.github.io/nhai/"
+            "link": "https://{{githubName}}.github.io/{{kebabCase name}}/"
         },
         "css": [
             "jsdoc.css"
