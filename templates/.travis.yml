@@ -1,0 +1,41 @@
+sudo: false
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: true
+language: node_js
+node_js:
+  - lts/*
+  - '10'
+  - '12'
+  - '14'
+
+stages:
+  - lint
+  - test
+  - coverage
+  - docs
+
+before_script:
+  - npm prune
+
+script:
+  - echo "Running tests with $(node -v) ..."
+  - npm run test
+
+jobs:
+  include:
+    - stage: lint
+      name: 'Lint & Security Audit'
+      script:
+        - npm run lint
+        - npm audit
+    - stage: coverage
+      name: 'Testing Coverage Report'
+      script: npm run coverage:publish
+    - stage: docs
+      name: 'Code Documentation'
+      script:
+        - npm run docs
+        - npm run docs:publish
