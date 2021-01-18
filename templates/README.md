@@ -4,4 +4,4 @@
 
 Work in progress.
 
-Code Documentation: https://apowers313.github.io/{{kebabCase name}}/
+Code Documentation: https://{{githubName}}.github.io/{{kebabCase name}}/
