@@ -40,7 +40,7 @@ module.exports = function(plop) {
                 type: "input",
                 name: "year",
                 message: "what year is it?",
-                default: "2020",
+                default: "2021",
             },
         ],
         actions: [
